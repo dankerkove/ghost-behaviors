@@ -92,8 +92,8 @@ class Location:
     
     
 
-    def forceDelete(self):
-      delName = "ButtonAutomation1554848473396"
+    def forceDelete(self, name):
+      delName = name
       for b in self.bList:
         if b.bName == delName:
           print("deleting: " + b.bName, b.bId)
@@ -200,4 +200,4 @@ thisLocation = Location(locId, auth)
 # thisLocation.listRules()
 # thisLocation.listBehaviors()
 thisLocation.getGhosts(delBehaviors=False, delRules=False)
-# thisLocation.forceDelete()
+# thisLocation.forceDelete(name="ButtonAutomation1554848473396")
